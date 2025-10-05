@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Presentes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background: #ff7eb3;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #333;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #f1f1f1;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    button {
+      background: #ff7eb3;
+      border: none;
+      padding: 8px 12px;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🎁 Lista de Presentes
+  </header>
+
+  <div class="container">
+    <h2>Escolha um presente para nos presentear 💝</h2>
+    <ul id="lista-presentes">
+      <li>🥪 Sanduicheira <button onclick="reservar(this)">Reservar</button></li>
+      <li>🧽 Pano de prato <button onclick="reservar(this)">Reservar</button></li>
+      <li>🥛 Jogo de copos <button onclick="reservar(this)">Reservar</button></li>
+      <li>🍴 Jogo de talheres <button onclick="reservar(this)">Reservar</button></li>
+      <li>🍽️ Jogo de pratos <button onclick="reservar(this)">Reservar</button></li>
+      <li>🔪 Tábua de carne <button onclick="reservar(this)">Reservar</button></li>
+      <li>☕ Jogo de xícaras <button onclick="reservar(this)">Reservar</button></li>
+      <li>🍳 Panelas <button onclick="reservar(this)">Reservar</button></li>
+      <li>🧺 Cesto de roupa suja <button onclick="reservar(this)">Reservar</button></li>
+      <li>🔥 Descanso de panela <button onclick="reservar(this)">Reservar</button></li>
+      <li>🔪 Facas de corte <button onclick="reservar(this)">Reservar</button></li>
+      <li>🛏️ Jogo de cama casal padrão <button onclick="reservar(this)">Reservar</button></li>
+      <li>🎂 Formas de bolo <button onclick="reservar(this)">Reservar</button></li>
+      <li>🗑️ Lixeiro <button onclick="reservar(this)">Reservar</button></li>
+      <li>🍲 Panela de pressão <button onclick="reservar(this)">Reservar</button></li>
+      <li>🥡 Potes variados <button onclick="reservar(this)">Reservar</button></li>
+      <li>🍲 Travessa de vidro <button onclick="reservar(this)">Reservar</button></li>
+      <li>🛁 Jogo de toalhas <button onclick="reservar(this)">Reservar</button></li>
+      <li>🫖 Garrafa térmica <button onclick="reservar(this)">Reservar</button></li>
+      <li>🪞 Tapetes <button onclick="reservar(this)">Reservar</button></li>
+      <li>🍴 Jogo de utensílios de cozinha <button onclick="reservar(this)">Reservar</button></li>
+    </ul>
+  </div>
+
+  <script>
+    function reservar(botao) {
+      botao.innerText = "Reservado ✅";
+      botao.disabled = true;
+    }
+  </script>
+
+</body>
+</html>
